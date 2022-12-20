@@ -10,10 +10,18 @@ body{
     margin:0;
     background-color: black;
 }
+@keyframes nom {
+    0%{top:0px;}
+    50%{top:100px;}
+    100%{top:0px;}
+}
 img{
     position: absolute;
     z-index: -1;
-    opacity: 30%;
+    opacity: 20%;
+    animation-name: nom;
+    animation-duration: .5s;
+    animation-iteration-count: infinite;
 }
 
 li {
